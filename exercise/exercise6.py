@@ -15,7 +15,7 @@ __author__ = 'burt'
 
 def fib(n):
     """
-    斐波那契数列
+    斐波那契数列 
     定义：0，1，1，2，3，5，8 ……
     f0 = 0 ,
     f1 =1  ,
@@ -29,7 +29,9 @@ def fib(n):
         return 1
     else:
         return fib(n-1) + fib(n-2)
-
+   “”“
+   还能简单点
+   ”“”
 
 if __name__ == '__main__':
     print fib(4)
