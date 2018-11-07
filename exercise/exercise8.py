@@ -23,6 +23,12 @@ def print99():
                 print i, '*', j, '=', i*j
             else:
                 print i, '*', j, '=', i*j,
+    """
+    much more easier when use %d in the statement
+    
+    print '%d * %d = %d' % (i, j, i*j)
+    
+    """
 
 
 if __name__ == '__main__':
