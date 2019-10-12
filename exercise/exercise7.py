@@ -25,4 +25,4 @@ if __name__ == '__main__':
     list_b = list_a[:]
 
     list_a.append(5)
-    print 'list_a是：', list_a, 'list_b是：', list_b
+    print('list_a是：{}-------list_b是：{}'.format(list_a, list_b))

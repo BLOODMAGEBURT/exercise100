@@ -1,5 +1,3 @@
-import threading
-
 #
 # lock = threading.Lock()
 # ticket = 1000
@@ -34,5 +32,4 @@ map4 = {}
 map1.update(map2)
 map1.update(map3)
 map1.update(map4)
-print map1
-
+print(map1)

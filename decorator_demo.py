@@ -1,5 +1,6 @@
-import logging
 import functools
+import logging
+
 logging.basicConfig(level=logging.INFO)
 
 
@@ -10,6 +11,7 @@ def log(func):
         func(*args, **kwargs)
         # func()
         logging.info('i am end')
+
     return wrapper
 
 
@@ -19,4 +21,4 @@ def test(name):
 
 
 test('tom')
-print __name__
+print(__name__)

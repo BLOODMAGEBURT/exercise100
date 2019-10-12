@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
-import mysql.connector
 import logging
 import threading
+
+import mysql.connector
 
 logging.basicConfig(level=logging.INFO)
 engine = None
@@ -38,6 +39,7 @@ class _Engine(object):
     数据库引擎对象
     用于保存 db模块的核心函数：create_engine 创建出来的数据库连接
     """
+
     def __init__(self, connection):
         self._connection = connection
 
@@ -51,6 +53,7 @@ class _DBCtx(threading.local):
     取得的连接是惰性连接对象，因此只有调用cursor对象时，才会真正获取数据库连接
     该对象是一个 Thread local对象，因此绑定在此对象上的数据 仅对本线程可见
     """
+
     def __init__(self):
         self.connection = None
         self.transactions = 0
@@ -75,6 +78,7 @@ class _LazyConnection(object):
     惰性连接对象
     仅当需要cursor对象时，才连接数据库，获取连接
     """
+
     def __init__(self):
         self.connection = None
 

@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import time
+
 """
 -------------------------------------------------
    File Name：     exercise9
@@ -18,10 +19,10 @@ def sleep_a_second():
     暂停一秒，再执行操作
     :return:
     """
-    print 'before: %s' % (format_time(),)
+    print('before: %s' % (format_time(),))
     time.sleep(1)
-    print 'after: %s' % (format_time(),)
-    print 'now execute the python code'
+    print('after: %s' % (format_time(),))
+    print('now execute the python code')
 
 
 def format_time():

@@ -20,13 +20,13 @@ def exercise18(param, times):
     :return:
     """
     total = 0
-    for i in xrange(1, times+1):
+    for i in range(1, times + 1):
         if i != times:
-            print '%s+' % (param*i,),
+            print('%s+' % (param * i,), )
         else:
-            print '%s' % (param*i,),
-        total += int(param*i)
-    print '和为%d' % (total,)
+            print('%s' % (param * i,), )
+        total += int(param * i)
+    print('和为{}'.format(total))
 
 
 def new(param, times):
@@ -37,9 +37,9 @@ def new(param, times):
     :return:
     """
     my_list = []
-    for i in xrange(1, times+1):
-        my_list.append(str(param)*i)
-    print '%d = %s' % (sum([int(x) for x in my_list]), '+'.join(my_list))
+    for i in range(1, times + 1):
+        my_list.append(str(param) * i)
+    print('%d = %s' % (sum([int(x) for x in my_list]), '+'.join(my_list)))
 
 
 if __name__ == '__main__':

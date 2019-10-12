@@ -20,15 +20,15 @@ def exercise20(high, times):
     :return:
     """
     my_list = [high, ]
-    for i in xrange(1, times+1):
+    for i in range(1, times + 1):
         high = float(high) / 2
         if i == times:
             my_list.append(high)
-            print my_list
-            print '第%d次的时候跳%.5f高' % (i, high)
+            print(my_list)
+            print('第%d次的时候跳%.5f高' % (i, high))
         else:
-            my_list.append(high*2)
-    print '总共的运动距离是%.5f' % (sum(my_list), )
+            my_list.append(high * 2)
+    print('总共的运动距离是%.5f' % (sum(my_list),))
 
 
 if __name__ == '__main__':

@@ -20,9 +20,9 @@ def flower_num():
     :return:
     """
     num = []
-    for i in xrange(100, 1000):
+    for i in range(100, 1000):
 
-        if i == math.pow(i/100, 3) + math.pow(i/10 % 10, 3) + math.pow(i % 10, 3):
+        if i == math.pow(i / 100, 3) + math.pow(i / 10 % 10, 3) + math.pow(i % 10, 3):
             num.append(i)
     return num
 
@@ -34,4 +34,5 @@ def flower_num():
 
 
 if __name__ == '__main__':
-    print flower_num()
+    print
+    flower_num()

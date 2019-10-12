@@ -19,10 +19,10 @@ def exercise19():
     """
     wan_shu = []
     # 循环判断，是不是所有质因数之和，参见exercise14
-    for i in xrange(1, 101):
+    for i in range(1, 101):
         if i == get_zhi_list(i):
             wan_shu.append(i)
-    print '完数list为：',wan_shu
+    print('完数list为：', wan_shu)
 
 
 def get_zhi_list(n):
@@ -33,13 +33,13 @@ def get_zhi_list(n):
     """
     my_list = []
     while n != 1:
-        for i in xrange(2, n+1):
+        for i in range(2, n + 1):
             if n % i == 0:
                 my_list.append(i)
                 n /= i
                 break
     my_list.insert(0, 1)
-    print my_list
+    print(my_list)
     return sum(my_list)
 
 

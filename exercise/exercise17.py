@@ -29,7 +29,7 @@ def count_num(a_str):
         else:
             other_num += 1
 
-    print '数字有%d个，字母有%d个，其他字符有%d个' % (int_num, letter_num, other_num)
+    print('数字有%d个，字母有%d个，其他字符有%d个' % (int_num, letter_num, other_num))
 
 
 def new(a_str):
@@ -51,7 +51,7 @@ def new(a_str):
         else:
             other_num += 1
 
-    print '数字有%d个，字母有%d个，空格有%d个，其他字符有%d个' % (int_num, letter_num, space_num, other_num)
+    print('数字有%d个，字母有%d个，空格有%d个，其他字符有%d个' % (int_num, letter_num, space_num, other_num))
 
 
 if __name__ == '__main__':

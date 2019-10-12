@@ -30,16 +30,16 @@ def new(days):
     :return:
     """
     n = 1
-    for day in range(10-days, 0, -1):
+    for day in range(10 - days, 0, -1):
         n = (n + 1) * 2
-    print n
+    print(n)
 
 
 if __name__ == '__main__':
     # 第一天的数量
-    print exercise21(1)
+    print(exercise21(1))
 
     # 第9天第数量
-    print exercise21(9)
+    print(exercise21(9))
 
     new(1)

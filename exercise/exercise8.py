@@ -20,9 +20,9 @@ def print99():
     for j in range(1, 10):
         for i in range(1, j+1):
             if i == j:
-                print i, '*', j, '=', i*j
+                print(i, '*', j, '=', i*j)
             else:
-                print i, '*', j, '=', i*j,
+                print(i, '*', j, '=', i*j,)
     """
     much more easier when use %d in the statement
     

@@ -11,7 +11,7 @@ class Student(object):
 
     @score.setter
     def score(self, value):
-        if not isinstance(value,int):
+        if not isinstance(value, int):
             raise ValueError('must be int')
         if value < 0 or value > 100:
             raise ValueError('must more than 0  or  less than 100')
@@ -26,9 +26,8 @@ s = Student()
 
 s.score = 60
 
-print s.score
-
+print(s.score)
 
 weekly = Enum('Weekly', ('Mon', 'Tus', 'Wen', 'Th', 'Fri'))
 
-print weekly.Tus
+print(weekly.Tus)

@@ -19,11 +19,11 @@ def condition(marks):
     :return:
     """
     if marks >= 90:
-        print 'A'
+        print('A')
     elif marks >= 60:
-        print 'B'
+        print('B')
     else:
-        print 'C'
+        print('C')
 
 
 if __name__ == '__main__':

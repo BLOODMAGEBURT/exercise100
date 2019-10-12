@@ -20,13 +20,13 @@ def zhi_shu(n, mnum):
     """
     nums = mnum
     count = 0
-    for i in xrange(2, n):
+    for i in range(2, n):
         if n % i == 0:
             nums.append(str(i))
             # print nums
             return zhi_shu(n / i, nums)
         count += 1
-        if count == n-2:
+        if count == n - 2:
             nums.append(str(n))
     # n 已经改变了，我还没想好 怎么处理
     return '%d=%s' % (n, '*'.join(nums))
@@ -38,22 +38,22 @@ def new_zhi_shu(n):
     :param n:
     :return:
     """
-    print '%d = ' % (n,),
+    print('%d = ' % (n,), )
     while n != 1:
-        for i in xrange(2, n+1):
+        for i in range(2, n + 1):
             if n % i == 0:
                 n /= i
                 if n != 1:
-                    print '%d*' % (i,),
+                    print('%d*' % (i,), )
                 else:
-                    print i
+                    print(i)
                 break
 
 
 if __name__ == '__main__':
-    print zhi_shu(90, [])
+    print(zhi_shu(90, []))
 
-    print new_zhi_shu(100)
+    print(new_zhi_shu(100))
 
 
 class AssignValue(object):
